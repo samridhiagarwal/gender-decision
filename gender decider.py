@@ -7,5 +7,6 @@ Y = ['male', 'female', 'female', 'female', 'female', 'male', 'female',    'male'
 
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(X,Y)
-prediction = clf.predict([[190, 90, 47]])
+a = [int(x) for x in input().split()]
+prediction = clf.predict(a)
 print(prediction)
